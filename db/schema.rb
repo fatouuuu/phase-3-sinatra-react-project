@@ -12,4 +12,28 @@
 
 ActiveRecord::Schema.define(version: 2023_03_04_095759) do
 
+  create_table "pets", force: :cascade do |t|
+    t.string "breed_name"
+    t.string "breed"
+    t.string "color"
+    t.string "breed_for"
+    t.string "sex"
+    t.string "lifespan"
+    t.string "temperament"
+    t.string "image_url"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email", null: false
+    t.string "password_digest", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
