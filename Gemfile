@@ -50,3 +50,15 @@ group :test do
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
 end
+
+# A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.
+gem 'rest-client', '~> 1.6', '< 1.8'
+
+# A library for parsing and generating MIME messages
+gem 'mime-types', '~> 3.3'
+
+# A library for generating and verifying JSON Web Tokens
+gem 'bcrypt'
+
+#  A Ruby gem that provides a library of fake data to use in your Ruby applications.
+gem 'faker'
