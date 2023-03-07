@@ -1,4 +1,4 @@
-require_relative "./config/environment"
+require_relative './config/environment'
 
 # Allow CORS (Cross-Origin Resource Sharing) requests
 use Rack::Cors do
@@ -13,3 +13,16 @@ use Rack::JSONBodyParser
 
 # Our application
 run ApplicationController
+# run UsersController
+
+
+
+# require 'sinatra'
+# require 'app'
+
+# run Sinatra::Application
+
+# task :start do
+#   puts "Starting the server..."
+#   system "bundle exec rackup config.ru -p 3000"
+# end
