@@ -51,6 +51,11 @@ group :test do
   gem "rspec-json_expectations", "~> 2.2"
 end
 
+# These gems will only be used when we are running the application in production
+# group :production do
+#   gem "rerun"
+# end
+
 # A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.
 gem 'rest-client', '~> 1.6', '< 1.8'
 
