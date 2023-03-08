@@ -1,6 +1,6 @@
 require_relative "./config/environment"
 require "sinatra/activerecord/rake"
-# require "rerun"
+require "rerun"
 
 desc "Start the server"
 task :server do  
@@ -15,7 +15,7 @@ task :server do
 
   # rerun allows auto-reloading of server when files are updated
   # -b runs in the background (include it or binding.pry won't work)
-  # exec "bundle exec rerun -b '#{rackup}'"
+  exec "bundle exec rerun -b '#{rackup}'"
 end
 
 desc "Start the console"
